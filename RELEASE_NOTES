@@ -13,6 +13,8 @@
 #--------------------------------------------------------------
 #  Mod:
 #        19-Mar-2010, S. Hoobler/M. Boyes  (sonya/mboyes)
+#          add streamdevice-R2-snapshot20081007-lcls2
+#        19-Mar-2010, S. Hoobler/M. Boyes  (sonya/mboyes)
 #          add streamdevice-R2-snapshot20081007-lcls1
 #        22-Feb-2010, K. Luchini         (luchini)
 #          add streamdevice-R2-4-lcls2
@@ -33,6 +35,9 @@
 #
 #========================================================================
 #
+streamdevice-R2-snapshot20081007-lcls2:
+      Build with base-R3.14.8.2-lcls6 and rtems 4.9.4
+
 streamdevice-R2-snapshot20081007-lcls1:
       CVS snapshot with regular expresions matching for linux.
       Build with base-R3.14.8.2-lcls5 and rtems 4.9.3
