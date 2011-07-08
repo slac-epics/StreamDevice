@@ -21,6 +21,10 @@
 #include "devStream.h"
 #include <waveformRecord.h>
 #include <string.h>
+#include <epicsVersion.h>
+#if ((EPICS_VERSION == 3)&&(EPICS_REVISION == 14)&&(EPICS_MODIFICATION > 9))
+  #include <errlog.h>
+#endif
 #include <epicsExport.h>
 
 static long readData (dbCommon *record, format_t *format)

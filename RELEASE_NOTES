@@ -35,6 +35,11 @@
 #
 #========================================================================
 #
+
+streamdevice-R2-snapshot20081007-lcls3:     include <errlog.h> to build against
+                                            EPICS BASE R3-14-12.  Also, modified
+                                            RELEASE file to be compatible with eco
+
 streamdevice-R2-snapshot20081007-lcls2:
       Build with base-R3.14.8.2-lcls6 and rtems 4.9.4
 
