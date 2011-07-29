@@ -36,6 +36,10 @@
 #========================================================================
 #
 
+streamdevice-R2-snapshot20110224-lcls1-linux-x86:    
+      Latest streamdevice snapshot. Builds against linux only! (ugly temporary solution)
+      Build with asyn-R4-16-lcls2 and base-R3-14-8-2-lcls6.
+
 streamdevice-R2-snapshot20081007-lcls3:     include <errlog.h> to build against
                                             EPICS BASE R3-14-12.  Also, modified
                                             RELEASE file to be compatible with eco
