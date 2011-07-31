@@ -36,6 +36,10 @@
 #========================================================================
 #
 
+streamdevice-R2-snapshot20110224-lcls1
+      Latest streamdevice snapshot from PSI.  Made modifications to build
+      with LCLS build style. Build with asyn-R4-17-RC1-lcls1
+
 streamdevice-R2-snapshot20110224-lcls1-linux-x86:    
       Latest streamdevice snapshot. Builds against linux only! (ugly temporary solution)
       Build with asyn-R4-16-lcls2 and base-R3-14-8-2-lcls6.
