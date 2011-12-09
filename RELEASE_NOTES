@@ -36,6 +36,10 @@
 #========================================================================
 #
 
+streamdevice-R2-5-lcls1:   Latest stable release from PSI: Integrated into the standard
+                           EPICS Build system which of course we are using here at SLAC.
+                           
+
 streamdevice-R2-snapshot20110224-lcls1
       Latest streamdevice snapshot from PSI.  Made modifications to build
       with LCLS build style. Build with asyn-R4-17-RC1-lcls1
