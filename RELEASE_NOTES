@@ -35,6 +35,7 @@
 #
 #========================================================================
 #
+streamdevice-R2-5-lcls2:   Build against asyn-R4-18-lcls2 to remove dependency on sequencer
 
 streamdevice-R2-5-lcls1:   Latest stable release from PSI: Integrated into the standard
                            EPICS Build system which of course we are using here at SLAC.
