@@ -35,6 +35,9 @@
 #
 #========================================================================
 #
+streamdevice-R2-5-lcls3:   Build against ASYN_MODULE_VERSION=asyn-R4-20_1-0 to pick up new 
+                           bug fixes in asyn.
+
 streamdevice-R2-5-lcls2:   Build against asyn-R4-18-lcls2 to remove dependency on sequencer
 
 streamdevice-R2-5-lcls1:   Latest stable release from PSI: Integrated into the standard
