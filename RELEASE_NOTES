@@ -35,6 +35,8 @@
 #
 #========================================================================
 #
+streamdevice-R2-5_1-0:     Build against ASYN_MODULE_VERSION=asyn-R4-20_1-1; build all architectures
+
 streamdevice-R2-5-lcls3:   Build against ASYN_MODULE_VERSION=asyn-R4-20_1-0 to pick up new 
                            bug fixes in asyn.
 
