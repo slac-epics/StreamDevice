@@ -35,6 +35,13 @@
 #
 #========================================================================
 #
+
+streamdevice-R2-6_1-0:     Merge and update to streamdevice version 2-6:
+                           applied patches as well:
+                           StreamDevice-2-6-patch20121003
+                           StreamDevice-2-6-patch20121009
+                           StreamDevice-2-6-patch20121113
+
 streamdevice-R2-5_1-1:     Build against ASYN_MODULE_VERSION=asyn-R4-21_1-0; build all architectures
 
 streamdevice-R2-5_1-0:     Build against ASYN_MODULE_VERSION=asyn-R4-20_1-1; build all architectures

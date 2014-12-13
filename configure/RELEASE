@@ -16,7 +16,7 @@ EPICS_MODULES=$(MODULES_SITE_TOP)
 # Define the version of modules needed by
 # IOC apps or other Support apps
 # =============================================================
-ASYN_MODULE_VERSION=asyn-R4-21_1-0
+ASYN_MODULE_VERSION=asyn-R4-25_1-0
 
 # ============================================================
 # EPICS Module Support
