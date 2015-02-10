@@ -35,6 +35,7 @@
 #
 #========================================================================
 #
+streamdevice-R2-6_1-1:    Build against asyn-trunk_Sept_17_2013
 
 streamdevice-R2-6_1-0:     Merge and update to streamdevice version 2-6:
                            applied patches as well:
