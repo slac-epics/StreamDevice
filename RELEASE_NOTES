@@ -35,6 +35,7 @@
 #
 #========================================================================
 #
+streamdevice-R2-6_1-2:    Support linuxRT_glibc-x86_64 and linux-x86_64 targets and static builds
 streamdevice-R2-6_1-1:    Build against asyn-trunk_Sept_17_2013
 
 streamdevice-R2-6_1-0:     Merge and update to streamdevice version 2-6:
@@ -42,6 +43,7 @@ streamdevice-R2-6_1-0:     Merge and update to streamdevice version 2-6:
                            StreamDevice-2-6-patch20121003
                            StreamDevice-2-6-patch20121009
                            StreamDevice-2-6-patch20121113
+                           add PCRE reference for linuxRT target and linux-x86_64
 
 streamdevice-R2-5_1-1:     Build against ASYN_MODULE_VERSION=asyn-R4-21_1-0; build all architectures
 

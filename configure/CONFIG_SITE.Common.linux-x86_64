@@ -1,0 +1,8 @@
+# =========================================================================
+# Perl-compatible regular expression support
+# =========================================================================
+#PCRE_INCLUDE=/afs/slac/g/lcls/package/pcre/8.37/linux-x86_64/include
+#PCRE_LIB=/afs/slac/g/lcls/package/pcre/8.37/linux-x86_64/lib
+
+PCRE_INCLUDE=/usr/include
+PCRE_LIB=/usr/lib64

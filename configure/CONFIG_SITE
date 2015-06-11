@@ -27,3 +27,6 @@
 # define INSTALL_LOCATION here
 #INSTALL_LOCATION=<fullpathname>
 
+# Add for cram, static build required for soft iocs
+SHARED_LIBRARIES=NO
+STATIC_BUILD=YES

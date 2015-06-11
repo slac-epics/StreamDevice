@@ -48,14 +48,12 @@ endif
 
 streamApp_DBD += stream.dbd
 
-ifdef PCRE
-LIB_LIBS += pcre
-else
-ifneq ($(words $(PCRE_LIB) $(PCRE_INCLUDE)),0)
-PROD_SYS_LIBS_DEFAULT += pcre
-PROD_SYS_LIBS_WIN32 += $(PCRE_LIB)\\pcre
-SHRLIB_DEPLIB_DIRS += $(PCRE_LIB)
-endif
+pcre_DIR = $(PCRE_LIB)
+
+ifneq ($(T_A),linuxRT-x86)
+  ifneq ($(T_A),linuxRT-x86_64)
+       PROD_LIBS_Linux += pcre
+  endif
 endif
 
 PROD_LIBS += $(EPICS_BASE_IOC_LIBS)
