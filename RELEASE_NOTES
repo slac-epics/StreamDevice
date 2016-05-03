@@ -35,6 +35,7 @@
 #
 #========================================================================
 #
+streamdevice-R2-6_1-3:    Build Against newer version of asyn ==> asyn-R4-26_0
 streamdevice-R2-6_1-2:    Support linuxRT_glibc-x86_64 and linux-x86_64 targets and static builds
 streamdevice-R2-6_1-1:    Build against asyn-trunk_Sept_17_2013
 
