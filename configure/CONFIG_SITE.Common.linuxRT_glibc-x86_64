@@ -1,6 +1,6 @@
 # =========================================================================
 # Perl-compatible regular expression support
 # =========================================================================
-PCRE_INCLUDE=/afs/slac/g/lcls/package/pcre/8.37/linuxRT_glibc-x86_64/include
-PCRE_LIB=/afs/slac/g/lcls/package/pcre/8.37/linuxRT_glibc-x86_64/lib
+PCRE_INCLUDE=$(PACKAGE_SITE_TOP)/pcre/8.37/$(T_A)/include
+PCRE_LIB=$(PACKAGE_SITE_TOP)/pcre/8.37/$(T_A)/lib
 
