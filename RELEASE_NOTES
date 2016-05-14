@@ -35,7 +35,7 @@
 #
 #========================================================================
 #
-streamdevice-R2-6-1-4:    13-May-2016, K. Luchini (luchini)
+streamdevice-R2-6_1-4:    13-May-2016, K. Luchini (luchini)
                           Use env var PACKAGE_SITE_TOP from RELEASE_SITE
                           in configure/CONFIG_SITE.Common.linuxRT_glibc-x86_64
                           add configure/CONFIG_SITE.Common.linuxRT-x86
