@@ -1,0 +1,6 @@
+# =========================================================================
+# Perl-compatible regular expression support
+# =========================================================================
+PCRE_INCLUDE=$(PACKAGE_SITE_TOP)/pcre/8.37/$(T_A)/include
+PCRE_LIB=$(PACKAGE_SITE_TOP)/pcre/8.37/$(T_A)/lib
+
