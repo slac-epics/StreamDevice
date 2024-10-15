@@ -1,3 +1,7 @@
+R2.8.9-1.2.2	2024-10-14 Jeremy Lorelli
+	Update asyn to R4.39-1.0.2
+	Link against tirpc for rhel8/9 to fix linker errors on those platforms
+
 R2.8.9-1.2.1	2021-06-03 Bruce Hill
 	Update asyn to R4.39-1.0.1
 
