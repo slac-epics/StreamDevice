@@ -32,13 +32,23 @@
 SHARED_LIBRARIES=NO
 STATIC_BUILD=YES
 
+ifdef T_A
+PKG_ARCH=$(T_A)
+endif
+
+# PCRE enabled for LinuxRT and rhel
+ifeq ($(T_A),$(filter $(T_A),rhel9-x86_64 rhel8-x86_64 rhel7-x86_64 linuxRT-x86_64 linuxRT-i686 linuxRT-arm_zynq))
+PCRE_TOP := $(PACKAGE_SITE_TOP)/pcre/8.37/$(PKG_ARCH)
+PCRE_INCLUDE := $(PCRE_TOP)/include
+PCRE_LIB := $(PCRE_TOP)/lib
+endif
+
 # Might as well build shared libs too where we can support them
-ifeq ($(T_A),linux-x86_64)
+ifeq ($(T_A),$(filter $(T_A),rhel9-x86_64 rhel8-x86_64 rhel7-x86_64 linux-x86_64 rhel6-x86_64))
 SHARED_LIBRARIES=YES
+LIB_INSTALLS += $(wildcard $(PCRE_LIB)/lib*)
 endif
-ifeq ($(T_A),rhel6-x86_64)
-SHARED_LIBRARIES=YES
-endif
-ifeq ($(T_A),rhel7-x86_64)
-SHARED_LIBRARIES=YES
+
+ifeq ($(T_A),rhel9-x86_64)
+PROD_SYS_LIBS += tirpc
 endif
