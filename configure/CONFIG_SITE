@@ -44,7 +44,7 @@ PCRE_LIB = $(PCRE_TOP)/lib
 endif
 
 # Might as well build shared libs too where we can support them
-ifeq ($(T_A),$(filter rhel% linux-x86_64,$(T_A)))
+ifeq ($(T_A),$(filter rhel% linuxRT-% linux-x86_64,$(T_A)))
 SHARED_LIBRARIES=YES
 LIB_INSTALLS += $(wildcard $(PCRE_LIB)/lib*)
 endif
