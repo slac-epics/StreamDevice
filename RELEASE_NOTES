@@ -1,3 +1,6 @@
+R2.8.9-1.3.1    2025-05-22 Jeremy Lorelli
+    Use PSPKG_ROOT for PCRE if it's available
+
 R2.8.9-1.3.0    2025-04-01 Jeremy Lorelli
     Remove all CONFIG_SITE.Common.XXX files, replace with generic blurbs in CONFIG_SITE
 
