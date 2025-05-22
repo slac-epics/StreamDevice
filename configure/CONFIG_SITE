@@ -38,7 +38,11 @@ endif
 
 # PCRE enabled for LinuxRT and rhel
 ifeq ($(T_A),$(filter rhel% linuxRT-%,$(T_A)))
+ifneq ($(PSPKG_ROOT),)
+PCRE_TOP = $(PSPKG_ROOT)/release/pcre/8.37/$(PKG_ARCH)
+else
 PCRE_TOP = $(PACKAGE_SITE_TOP)/pcre/8.37/$(PKG_ARCH)
+endif
 PCRE_INCLUDE = $(PCRE_TOP)/include
 PCRE_LIB = $(PCRE_TOP)/lib
 endif
