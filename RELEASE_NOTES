@@ -1,3 +1,9 @@
+R2.8.9-1.4.0    2026-10-01 Jeremy Lorelli
+    Use ${PACKAGE_SITE_TOP} for PCRE (reverts my previous change switching to PSPKG_ROOT
+    Avoid installing PCRE binaries to lib/. IOC apps must now explicitly specify which PCRE to use
+    Add rhel10 support
+    Revert asyn to R4.39-1.0.2
+
 R2.8.9-1.3.2	2025-08-22 Jane Liu
 	Update asyn to R4.42-1.0.0
 
