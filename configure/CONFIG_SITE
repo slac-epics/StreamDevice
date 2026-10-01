@@ -32,28 +32,26 @@
 SHARED_LIBRARIES=NO
 STATIC_BUILD=YES
 
-ifdef T_A
-PKG_ARCH:=$(T_A)
+# Set a default if not provided by EPICS base already.
+ifndef PKG_ARCH
+PKG_ARCH=$(T_A)
 endif
 
 # PCRE enabled for LinuxRT and rhel
-ifeq ($(T_A),$(filter rhel% linuxRT-%,$(T_A)))
-ifneq ($(PSPKG_ROOT),)
-PCRE_TOP = $(PSPKG_ROOT)/release/pcre/8.37/$(PKG_ARCH)
-else
+ifeq ($(T_A),$(filter rhel% buildroot-% linuxRT-%,$(T_A)))
 PCRE_TOP = $(PACKAGE_SITE_TOP)/pcre/8.37/$(PKG_ARCH)
-endif
 PCRE_INCLUDE = $(PCRE_TOP)/include
 PCRE_LIB = $(PCRE_TOP)/lib
 endif
 
 # Might as well build shared libs too where we can support them
-ifeq ($(T_A),$(filter rhel% linuxRT-% linux-x86_64,$(T_A)))
+ifeq ($(T_A),$(filter rhel% linuxRT-% buildroot-% linux-x86_64,$(T_A)))
 SHARED_LIBRARIES=YES
-LIB_INSTALLS += $(wildcard $(PCRE_LIB)/lib*)
 endif
 
-ifeq ($(T_A),$(filter rhel9-x86_64 rhel8-x86_64,$(T_A)))
+# The built-in StreamDevice IOC app (which nobody uses anyway) will
+# just build with system tirpc, for simplicity.
+ifeq ($(T_A),$(filter rhel9-% rhel8-% rhel10-%,$(T_A)))
 PROD_SYS_LIBS += tirpc
 endif
 
